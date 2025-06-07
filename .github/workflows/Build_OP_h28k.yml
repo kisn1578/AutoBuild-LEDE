@@ -119,7 +119,7 @@ jobs:
     - name: Configuration Customization
       run: |
         if [[ "${{ inputs.device_config }}" == "latest" ]]; then
-            CONFIG_FILE="config/MangoPi_M28C.config"
+            CONFIG_FILE="config/h28k.config"
         elif [[ "${{ inputs.device_config }}" == *"6.12.x"* ]]; then
             CONFIG_FILE="config/h28k.config"
         else
